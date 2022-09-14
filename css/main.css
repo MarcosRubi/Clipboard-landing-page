@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Bai Jamjuree", sans-serif;
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 1.3rem 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+    color: #4c545d;
+    font-weight: 700;
+}
+
+p {
+    color: #9fabb2;
+    margin: 20px auto 40px auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 650px;
+}
+
+section {
+    padding-bottom: 80px;
+}
+
+img {
+    width: 100%;
+    max-width: 1100px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4c545d;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px 0;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+    font-weight: 700;
+}
+a:hover {
+    color: #26baa4;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 30px auto;
+}
+
+.d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.align-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.jc-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.jc-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.flex-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px auto;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.btn:hover {
+    opacity: 0.7;
+}
+
+.btn-green {
+    background-color: #26baa4;
+    -webkit-box-shadow: #26baa4 0px 2px 4px, #26baa4 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: #26baa4 0px 2px 4px, #26baa4 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.btn-green:hover {
+    -webkit-box-shadow: #26baa4 0px 4px 4px, #26baa4 0px 10px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: #26baa4 0px 4px 4px, #26baa4 0px 10px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.btn-blue {
+    background-color: #6173ff;
+    -webkit-box-shadow: #6173ff 0px 2px 4px, #6173ff 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: #6173ff 0px 2px 4px, #6173ff 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.btn-blue:hover {
+    -webkit-box-shadow: #6173ff 0px 4px 4px, #6173ff 0px 10px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: #6173ff 0px 4px 4px, #6173ff 0px 10px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.d-block-sm {
+    display: block;
+}
+
+.w-100-sm {
+    width: 100%;
+    max-width: 20rem;
+}
+
+.flex-column-sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.card {
+    max-width: 375px;
+}
+.card p {
+    margin: 10px auto 80px auto;
+}
+.card img {
+    max-width: 15%;
+    margin: 30px auto;
+}
+
+.banner img {
+    width: initial;
+    opacity: 0;
+}
+.banner img.visible {
+    opacity: 1;
+    -webkit-animation: visible 1s linear;
+    animation: visible 1s linear;
+}
+.banner h1 {
+    opacity: 0;
+}
+.banner h1.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.25s linear;
+    animation: visible 1.25s linear;
+}
+.banner p {
+    opacity: 0;
+}
+.banner p.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.5s linear;
+    animation: visible 1.5s linear;
+}
+.banner .btn-green {
+    opacity: 0;
+}
+.banner .btn-green.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.75s linear;
+    animation: visible 1.75s linear;
+}
+.banner .btn-blue {
+    opacity: 0;
+}
+.banner .btn-blue.visible {
+    opacity: 1;
+    -webkit-animation: visible 2s linear;
+    animation: visible 2s linear;
+}
+
+.snippets__img {
+    padding: 30px 0;
+}
+.snippets h2 {
+    opacity: 0;
+}
+.snippets h2.visible {
+    opacity: 1;
+    -webkit-animation: visible 1s linear;
+    animation: visible 1s linear;
+}
+.snippets .text-center > p {
+    opacity: 0;
+}
+.snippets .text-center > p.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.25s linear;
+    animation: visible 1.25s linear;
+}
+.snippets img {
+    opacity: 0;
+}
+.snippets img.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.5s linear;
+    animation: visible 1.5s linear;
+}
+.snippets .card:first-child {
+    opacity: 0;
+}
+.snippets .card:first-child.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.75s linear;
+    animation: visible 1.75s linear;
+}
+.snippets .card:nth-child(2) {
+    opacity: 0;
+}
+.snippets .card:nth-child(2).visible {
+    opacity: 1;
+    -webkit-animation: visible 2.25s linear;
+    animation: visible 2.25s linear;
+}
+.snippets .card:last-child {
+    opacity: 0;
+}
+.snippets .card:last-child.visible {
+    opacity: 1;
+    -webkit-animation: visible 2.75s linear;
+    animation: visible 2.75s linear;
+}
+
+.devices h2 {
+    opacity: 0;
+}
+.devices h2.visible {
+    opacity: 1;
+    -webkit-animation: visible 1s linear;
+    animation: visible 1s linear;
+}
+.devices p {
+    opacity: 0;
+}
+.devices p.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.25s linear;
+    animation: visible 1.25s linear;
+}
+.devices img {
+    padding: 30px 0;
+    opacity: 0;
+}
+.devices img.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.5s linear;
+    animation: visible 1.5s linear;
+}
+
+.workflow h2 {
+    opacity: 0;
+}
+.workflow h2.visible {
+    opacity: 1;
+    -webkit-animation: visible 1s linear;
+    animation: visible 1s linear;
+}
+.workflow .text-center > p {
+    opacity: 0;
+}
+.workflow .text-center > p.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.25s linear;
+    animation: visible 1.25s linear;
+}
+.workflow .card {
+    margin: 0px auto;
+}
+.workflow .card:first-child {
+    opacity: 0;
+}
+.workflow .card:first-child.visible {
+    opacity: 1;
+    -webkit-animation: visible 1s linear;
+    animation: visible 1s linear;
+}
+.workflow .card:nth-child(2) {
+    opacity: 0;
+}
+.workflow .card:nth-child(2).visible {
+    opacity: 1;
+    -webkit-animation: visible 1.5s linear;
+    animation: visible 1.5s linear;
+}
+.workflow .card:last-child {
+    opacity: 0;
+}
+.workflow .card:last-child.visible {
+    opacity: 1;
+    -webkit-animation: visible 2s linear;
+    animation: visible 2s linear;
+}
+
+.images-container .d-flex {
+    gap: 30px;
+}
+.images-container img {
+    width: 40%;
+    max-width: 8rem;
+    margin: 30px auto;
+    aspect-ratio: 3/1;
+}
+.images-container .d-flex img:first-child {
+    opacity: 0;
+}
+.images-container .d-flex img:first-child.visible {
+    opacity: 1;
+    -webkit-animation: visible 1s linear;
+    animation: visible 1s linear;
+}
+.images-container .d-flex img:nth-child(2) {
+    opacity: 0;
+}
+.images-container .d-flex img:nth-child(2).visible {
+    opacity: 1;
+    -webkit-animation: visible 1.25s linear;
+    animation: visible 1.25s linear;
+}
+.images-container .d-flex img:nth-child(3) {
+    opacity: 0;
+}
+.images-container .d-flex img:nth-child(3).visible {
+    opacity: 1;
+    -webkit-animation: visible 1.5s linear;
+    animation: visible 1.5s linear;
+}
+.images-container .d-flex img:nth-child(4) {
+    opacity: 0;
+}
+.images-container .d-flex img:nth-child(4).visible {
+    opacity: 1;
+    -webkit-animation: visible 1.75s linear;
+    animation: visible 1.75s linear;
+}
+.images-container .d-flex img:last-child {
+    opacity: 0;
+}
+.images-container .d-flex img:last-child.visible {
+    opacity: 1;
+    -webkit-animation: visible 2s linear;
+    animation: visible 2s linear;
+}
+
+.download h2 {
+    opacity: 0;
+}
+.download h2.visible {
+    opacity: 1;
+    -webkit-animation: visible 1s linear;
+    animation: visible 1s linear;
+}
+.download p {
+    opacity: 0;
+}
+.download p.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.25s linear;
+    animation: visible 1.25s linear;
+}
+.download .btn-green {
+    opacity: 0;
+}
+.download .btn-green.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.5s linear;
+    animation: visible 1.5s linear;
+}
+.download .btn-blue {
+    opacity: 0;
+}
+.download .btn-blue.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.75s linear;
+    animation: visible 1.75s linear;
+}
+
+footer .logo {
+    max-width: 4rem;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+footer .logo.visible {
+    opacity: 1;
+    -webkit-animation: visible 1s linear;
+    animation: visible 1s linear;
+}
+footer .links-1 {
+    opacity: 0;
+}
+footer .links-1.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.25s linear;
+    animation: visible 1.25s linear;
+}
+footer .links-2 {
+    opacity: 0;
+}
+footer .links-2.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.5s linear;
+    animation: visible 1.5s linear;
+}
+footer .links-3 {
+    opacity: 0;
+}
+footer .links-3.visible {
+    opacity: 1;
+    -webkit-animation: visible 1.75s linear;
+    animation: visible 1.75s linear;
+}
+footer .social-icons {
+    margin-top: 20px;
+    opacity: 0;
+}
+footer .social-icons.visible {
+    opacity: 1;
+    -webkit-animation: visible 2s linear;
+    animation: visible 2s linear;
+}
+footer .social-icons a {
+    padding: 5px 15px;
+}
+footer .social-icons a:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+footer .attribution {
+    font-size: 0.9rem;
+    opacity: 0;
+}
+footer .attribution.visible {
+    opacity: 1;
+    -webkit-animation: visible 2.25s linear;
+    animation: visible 2.25s linear;
+}
+footer .attribution a {
+    font-size: 0.9rem;
+    display: inline;
+    color: #6173ff;
+}
+
+@-webkit-keyframes visible {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        background-image: url(../images/bg-header-desktop.png);
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .d-block-sm {
+        display: initial;
+    }
+
+    .w-100-sm {
+        width: initial;
+    }
+
+    .flex-column-sm {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .btn {
+        padding: 20px 35px;
+        border-radius: 35px;
+    }
+
+    .banner {
+        padding: 120px 0;
+    }
+
+    .snippets__img {
+        -webkit-transform: translateX(-15%);
+        -ms-transform: translateX(-15%);
+        transform: translateX(-15%);
+    }
+    .snippets .card {
+        text-align: start;
+    }
+
+    .card p {
+        max-width: 375px;
+    }
+
+    footer .logo {
+        margin: 0;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+    footer .links {
+        text-align: start;
+        gap: 30px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        padding-left: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        margin: 0px auto;
+    }
+
+    .btn {
+        padding: 20px 60px;
+    }
+
+    .btn-green {
+        -webkit-box-shadow: #26baa4 0px 3px 8px;
+        box-shadow: #26baa4 0px 3px 8px;
+    }
+
+    .btn-blue {
+        -webkit-box-shadow: #6173ff 0px 3px 8px;
+        box-shadow: #6173ff 0px 3px 8px;
+    }
+
+    footer .links {
+        padding-left: 8rem;
+    }
+}
